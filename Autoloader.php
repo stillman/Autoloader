@@ -40,10 +40,10 @@ class Autoloader
 	const STANDARD_PSR4 = 'psr4';
 	const STANDARD_ZEND = 'zend';
 
-	public static $classmap = [
-		self::STANDARD_PSR4 => [],
-		self::STANDARD_ZEND => [],
-	];
+	public static $classmap = array(
+		self::STANDARD_PSR4 => array(),
+		self::STANDARD_ZEND => array(),
+	);
 
 	public static $extension = '.php';
 
@@ -61,6 +61,9 @@ class Autoloader
 		{
 			if (strpos($class_name, $prefix) === 0)
 			{
+				if ($class_name === $prefix)
+					continue;
+
 				$found = true;
 				break;
 			}
