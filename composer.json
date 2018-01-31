@@ -3,7 +3,7 @@
 	"description": "Extended autoloader class with support of PSR-4 and Zend file naming standards",
 	"keywords": ["autoloader", "psr-4", "zend"],
 	"homepage": "http://github.com/Stillman/Autoloader",
-	"license": "GPL",
+	"license": "GPL-3.0-or-later",
 
 	"authors": [
 		{
